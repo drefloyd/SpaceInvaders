@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="FinalGroupProjectCIS297.GameOverPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalGroupProjectCIS297"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background=   "{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="900">
+
+    <Grid>
+        <Image Source="Assets/background.jpg" Stretch="UniformToFill"/>
+        <Button x:Name="menuCreditsButton" Content="Credits" Margin="478,310,0,0" VerticalAlignment="Top" Click="menuCreditsButton_Click" RenderTransformOrigin="0.5,0.5"/>
+        <Button x:Name="creditsMenuButton" Content="Menu" Margin="480,237,0,0" VerticalAlignment="Top" Click="creditsMenuButton_Click" RenderTransformOrigin="-0.227,-1.572"/>
+        <Image Source ="Assets/spaceshipImage.jpg"  HorizontalAlignment="Left" Height="100" Margin="456,470,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="8.959,-0.397"/>
+        <Image Source ="Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="40" Margin="319,260,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-36.51"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="40" Margin="566,575,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="36.51"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="40" Margin="492,390,0,0" VerticalAlignment="Top" Width="31" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto/"/>
+        <TextBlock x:Name="ganeOverScore" HorizontalAlignment="Left" Margin="475,170,0,0" TextWrapping="Wrap" Text="Score:" VerticalAlignment="Top" FontFamily="Arial Black" FontSize="20"/>
+        <TextBlock x:Name="GameOverTitle" HorizontalAlignment="Left" Margin="458,104,0,0" TextWrapping="Wrap" Text="Game Over" VerticalAlignment="Top" FontFamily="Forte" FontSize="23"/>
+        <Image Source ="Assets/powerUp.jpg"  HorizontalAlignment="Left" Height="66" Margin="156,147,0,0" VerticalAlignment="Top" Width="61"/>
+        <Image Source ="Assets/powerUp.jpg"  HorizontalAlignment="Left" Height="65" Margin="766,155,0,0" VerticalAlignment="Top" Width="59" RenderTransformOrigin="8.959,-0.397"/>
+        <Image Source ="Assets/alien.jpg"  HorizontalAlignment="Left" Height="65" Margin="753,466,0,0" VerticalAlignment="Top" Width="59" RenderTransformOrigin="8.959,-0.397"/>
+        <Image Source ="Assets/alien.jpg"  HorizontalAlignment="Left" Height="65" Margin="151,473,0,0" VerticalAlignment="Top" Width="59" RenderTransformOrigin="8.959,-0.397"/>
+    </Grid>
+</Page>

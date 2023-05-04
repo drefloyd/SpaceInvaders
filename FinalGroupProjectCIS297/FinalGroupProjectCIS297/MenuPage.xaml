@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="FinalGroupProjectCIS297.MenuPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FinalGroupProjectCIS297"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1025" Height="1000">
+
+    <Grid>
+        <Image Source="Assets/background.jpg" Stretch="UniformToFill"/>
+        <Image Source ="Assets/blastStreak flipped.jpg"  HorizontalAlignment="Left" Height="100" Margin="138,70,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image Source ="/Assets/spaceshipImage.jpg" HorizontalAlignment="Left" Height="100" Margin="-1555,267,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-179.789"/>
+            </Image.RenderTransform>
+        </Image>
+        <TextBlock x:Name="GameName" HorizontalAlignment="Left" Margin="370,100,0,0" TextWrapping="Wrap" Text="SPACE INVADERS" VerticalAlignment="Top" FontFamily="Forte" FontSize="30"/>
+        <Image Source ="/Assets/blastStreak.jpg"  HorizontalAlignment="Left" Height="83" Margin="-151,-373,0,0" VerticalAlignment="Top" Width="144" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto/">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-90.301"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source ="Assets/spaceshipImage.jpg"  HorizontalAlignment="Left" Height="100" Margin="761,326,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="8.959,-0.397"/>
+        <Image Source ="Assets/alien.jpg"  HorizontalAlignment="Left" Height="100" Margin="762,64,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="30" Margin="799,270,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto/"/>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="30" Margin="800,230,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto/"/>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="30" Margin="800,190,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto/"/>
+        <Image Source ="/Assets/alien.jpg"  HorizontalAlignment="Left" Height="100" Margin="134,377,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="180"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="30" Margin="-200,320,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="8.959,-0.397" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="180"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="30" Margin="-146,220,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="7.776,1.003" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="180"/>
+            </Image.RenderTransform>
+        </Image>
+        <Image Source ="/Assets/BulletButSmaller.jpg"  HorizontalAlignment="Left" Height="30" Margin="-200,360,0,0" VerticalAlignment="Top" Width="22" RenderTransformOrigin="8.959,-0.397">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="180"/>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="menuPlayGameButton" Content="Play Game" Margin="450,249,0,0" VerticalAlignment="Top" Click="menuPlayGameButton_Click"/>
+        <Button x:Name="menuCreditsButton" Content="Credits" Margin="460,308,0,0" VerticalAlignment="Top" Click="menuCreditsButton_Click" RenderTransformOrigin="0.405,0.398"/>
+        <TextBlock x:Name="Instructions" HorizontalAlignment="Left" Margin="320,400,0,0" TextWrapping="Wrap" Text="Press A to shoot for controller/ Up for keyboard" VerticalAlignment="Top" FontFamily="Forte" FontSize="15"/>
+        <TextBlock x:Name="Instructions3" HorizontalAlignment="Left" Margin="440,430,0,0" TextWrapping="Wrap" Text="Press B to quit" VerticalAlignment="Top" FontFamily="Forte" FontSize="15"/>
+        <TextBlock x:Name="Instructions4" HorizontalAlignment="Left" Margin="300,460,0,0" TextWrapping="Wrap" Text="Left joystick for left + right movement/ arrows for keyboard" VerticalAlignment="Top" FontFamily="Forte" FontSize="15"/>
+    </Grid>
+</Page>
